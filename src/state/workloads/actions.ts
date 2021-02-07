@@ -4,7 +4,9 @@ import { Status } from './types';
 import { SUBMIT, CREATED, CANCEL, UPDATE_STATUS } from './constants';
 
 
-export const submit = createAction(SUBMIT, resolve => (params: { complexity: number }) => resolve({ complexity: params.complexity }));
+export const submit = createAction(
+  SUBMIT,
+  resolve => (params: { complexity: number }) => resolve({ complexity: params.complexity }));
 
 export const created = createAction(CREATED, resolve =>
   (params: { id: number, status: Status, complexity: number, completeDate: Date }) => resolve({

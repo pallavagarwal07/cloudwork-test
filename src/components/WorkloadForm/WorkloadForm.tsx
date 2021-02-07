@@ -5,7 +5,7 @@ import { submit } from '../../state/workloads/actions';
 
 
 interface WorkloadFormDispatchProps {
-  submitWorkload: (complexity: number) => void  
+  submitWorkload: (complexity: number) => void;
 }
 
 interface WorkloadFormProps extends 
@@ -31,10 +31,10 @@ class WorkloadForm extends React.PureComponent<WorkloadFormProps, WorkloadFormSt
   render() {
     return (
       <form>
-        <h2>Create workload</h2>
+        <h2 className="CreateTitle">Create a workload</h2>
         
         <div>
-          <label>
+          <label className="Complexity">
             Complexity: {this.state.complexity}
             <br />
             <input 
@@ -43,12 +43,15 @@ class WorkloadForm extends React.PureComponent<WorkloadFormProps, WorkloadFormSt
               type="range" 
               min="1" 
               max="10" 
+              className = "Slider"
             />
           </label>
         </div>
 
         <div>
-          <button onClick={this.handleSubmit} type="submit">Start work</button>
+          <button onClick={this.handleSubmit} type="submit" className="Submit">
+            Start work
+          </button>
         </div>
       </form>
     );

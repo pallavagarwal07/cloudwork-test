@@ -1,1 +1,97 @@
 /* .App {} */
+#heading {
+    color: #6400ff;
+}
+
+* {
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.m40 {
+    display: inline-block;
+    width: 40%;
+}
+
+.m60 {
+    display: inline-block;
+    width: 60%;
+}
+
+.m80 {
+    display: inline-block;
+    width: 80%;
+}
+
+.off10 {
+    margin-left: 10%;
+}
+
+.boundary {
+    border: solid 1px #6400ff;
+    padding: 5px 20px 20px 20px;
+}
+
+
+ol {
+    padding-left: 0;
+}
+
+.WorkloadItem {
+    margin: 10px;
+    margin-left: 0;
+}
+
+.WorkloadForm {
+    vertical-align: top;
+    margin-top: 30px;
+}
+
+.Slider {
+    -webkit-appearance: none;
+    -webkit-transition: .2s;
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .2s;
+    margin: 15px 0 20px 0;
+}
+
+.Slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 45px;
+    height: 25px;
+    background: #2400af;
+    cursor: pointer;
+}
+
+.Slider::-moz-range-thumb {
+    width: 45px;
+    height: 25px;
+    background: #2400af;
+    cursor: pointer;
+}
+
+.CreateTitle {
+    text-align: center;
+    width: 100%;
+    font-weight: 300;
+    color: #4400df;
+    margin-bottom: 1em;
+}
+
+.Complexity {
+    color: #4400df;
+}
+
+.Submit {
+    border: none;
+    background-color: #4400df;
+    width: 8em;
+    height: 2em;
+    color: white;
+    font-size: 1.2em;
+}
